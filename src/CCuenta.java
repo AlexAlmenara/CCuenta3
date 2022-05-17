@@ -11,18 +11,33 @@ public class CCuenta {
     private String nombre;
     private String cuenta;
     private double saldo;
-    private double tipoInterés;
+    private double tipoInteres;
 
+    /**
+     * Constructor vacío
+     */
     public CCuenta() {
         
     }
 
+    /**
+     * 
+     * @param nom nombre
+     * @param cue cuenta
+     * @param sal saldo
+     * @param tipo tipointeres
+     */
     public CCuenta(String nom, String cue, double sal, double tipo) {
         nombre = nom;
         cuenta = cue;
         saldo = sal;
+        tipoInteres = tipo;
     }
 
+    /**
+     * 
+     * @return devuelve el saldo
+     */
     public double estado() {
         return saldo;
     }
@@ -62,14 +77,14 @@ public class CCuenta {
         return cuenta;
     }
 
-    /**
+    /** Getter del atributo nombre
      * @return the nombre
      */
     public String getNombre() {
         return nombre;
     }
 
-    /**
+    /** getter del atributo saldo
      * @return the saldo
      */
     public double getSaldo() {
@@ -77,37 +92,38 @@ public class CCuenta {
     }
 
     /**
+     * getter del tipoInteres
      * @return the tipoInterés
      */
     public double getTipoInterés() {
-        return tipoInterés;
+        return tipoInteres;
     }
 
-    /**
+    /** setter del atributo cuenta
      * @param cuenta the cuenta to set
      */
     public void setCuenta(String cuenta) {
         this.cuenta = cuenta;
     }
 
-    /**
+    /** setter del nombre
      * @param nombre the nombre to set
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    /**
+    /** setter del saldo
      * @param saldo the saldo to set
      */
     public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 
-    /**
+    /** setter del tipo de interés
      * @param tipoInterés the tipoInterés to set
      */
     public void setTipoInterés(double tipoInterés) {
-        this.tipoInterés = tipoInterés;
+        this.tipoInteres = tipoInterés;
     }
 }
